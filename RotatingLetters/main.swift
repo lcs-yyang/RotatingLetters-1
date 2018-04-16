@@ -5,13 +5,13 @@
 //  Created by Gordon, Russell on 2018-04-06.
 //  Copyright © 2018 Gordon, Russell. All rights reserved.
 //
+// loop forever until we get good input
 
+var validInput = "" // outside the loop -- we can use it later on AFTER
 import Foundation
 prompt: while 1 == 1 {
     //INPUT
     
-    // loop forever until we get good input
-    var validInput = "" // outside the loop -- we can use it later on AFTER
     // Prompt the user
     print("Input word is?")
     
@@ -50,16 +50,30 @@ prompt: while 1 == 1 {
     break // quit the while loop and begin PROCESS section
     
     
-    // PROCESS
-    print(validInput)
-    
-}
-// OUTPUT
-if givenInput = "I"||"O"||"S"||"Z"||"X"||"N" {
-    print("Yes")
-} else if { givenInput =  "A"||"B"||"C"||"D"||"E"||"F"||"G"||"H"||"J"||"K"||"L"||"M"||"P"||"Q"||"R"||"T"||"U"||"V"||"W"||"X"||"Y"
-    print("No")
+  
+        
 }
 
-
-
+// PROCESS
+print(validInput)
+var countOfGoodLetters = 0
+for letter in validInput {
+    // Check each letter to make sure they are IOSZXN
+    if letter == "I" || letter == "O" || letter == "S" || letter == "Z" || letter == "X" || letter == "N" {
+        
+        //Good - keep checking (continue loop)
+        countOfGoodLetters += 1
+        
+        
+    }
+//Output
+    if countOfGoodLetters == validInput.count {
+        print("Yes")
+    } else {
+        print("No")
+    }
+        
+        
+        
+        
+}
