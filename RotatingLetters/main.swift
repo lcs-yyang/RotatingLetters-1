@@ -55,5 +55,11 @@ prompt: while 1 == 1 {
     
 }
 // OUTPUT
+if givenInput = "I"||"O"||"S"||"Z"||"X"||"N" {
+    print("Yes")
+} else if { givenInput =  "A"||"B"||"C"||"D"||"E"||"F"||"G"||"H"||"J"||"K"||"L"||"M"||"P"||"Q"||"R"||"T"||"U"||"V"||"W"||"X"||"Y"
+    print("No")
+}
+
 
 
