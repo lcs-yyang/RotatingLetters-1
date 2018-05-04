@@ -33,7 +33,7 @@ prompt: while 1 == 1 {
     //Test #3: Check to ensure there is only UPPERCASE letters and no spaces
     checking: for individualCharacter in givenInput {
         
-        //DEBUG: PRint the character we are looking at
+        //DEBUG: Print the character we are looking at
         print(individualCharacter)
         
         //Check the character
